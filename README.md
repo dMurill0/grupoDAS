@@ -1,9 +1,9 @@
 # grupoDAS
-este es el repositorio de Diseño y Arquitectura del Software
-Integrantes: 
-  Daniel Murillo Garzón
-  Hamsa Aldrobi Elharti
-  Celia Sanjuan Sánchez
-  Ana Acosta Hernández
-  Raquel Alonso Fernández
+este es el repositorio de Diseño y Arquitectura del Software /n
+Integrantes: /n
+  Daniel Murillo Garzón /n
+  Hamsa Aldrobi Elharti /n
+  Celia Sanjuan Sánchez /n
+  Ana Acosta Hernández /n
+  Raquel Alonso Fernández /n
   Manuel León Briz
