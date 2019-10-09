@@ -10,7 +10,7 @@ Este es el repositorio de Diseño y Arquitectura del Software
   
 ## ROLES
 ### Arquitectos Software Senior (ASS):
-Hamsa, Raquel \n
+Hamsa, Raquel
 ### Arquitectos  Software  Junior  (ASJ):
 Daniel, Manuel
 ### Arquitectos Software Cognitivos (ASC):
