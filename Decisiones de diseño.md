@@ -1,2 +1,2 @@
 # Decisiones de diseño
-A la hora de la toma de decisiones cogeremos aproximadamente unos tres requisitos y trabajaremos sobre ellos. Cuando se hayan tomado las decisiones sobre éstos, volveremos a coger otros requisitos y así sucesivamente. 
+A la hora de la toma de decisiones cogeremos aproximadamente unos tres requisitos y trabajaremos sobre ellos. Cuando se hayan tomado las decisiones sobre éstos, volveremos a coger otros y así sucesivamente. 
