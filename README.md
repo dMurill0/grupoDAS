@@ -15,3 +15,5 @@ Hamsa, Raquel
 Daniel, Manuel
 ### Arquitectos Software Cognitivos (ASC):
 Celia, Ana
+
+Además de este repositorio hemos creado un [Trello](https://trello.com/b/oGMOQVEW/das) para poder interactuar entre nosotros y llevar mejor el proyecto.
