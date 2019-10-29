@@ -9,7 +9,7 @@ A la hora de la toma de decisiones cogeremos aproximadamente unos tres requisito
         <table>
         <tr>
           <td><strong>Título</strong></td> 
-          <td>Interfaz universal</td>
+          <td>Interfaz única</td>
         </tr>
         <tr>
           <td><strong>ID</td>
@@ -33,11 +33,11 @@ A la hora de la toma de decisiones cogeremos aproximadamente unos tres requisito
         </tr>
         <tr> 
           <td><strong>Decisiones alternativas(opciones)</td>
-          <td> ADD-002: Patron adapter (wrapper)</td>
+          <td> ADD-002: Patrón Facade (fachada)</td>
         </tr>
         <tr>
           <td><strong>Decisión obtenida (opciones seleccionadas)</td>
-          <td>Opción 1: ADD-002. Seleccionada debido a que convierte la interfaz de una clase en otra interfaz esperada por                 los clientes.</td>
+          <td>Opción 1: ADD-002. Provee una interfaz unificada simple para acceder a una interfaz o grupo de interfaces de un subsistema.</td>
         </tr>
         <tr>
           <td><strong>Pros Opciones</td>
