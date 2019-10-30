@@ -20,7 +20,7 @@ Para hacer más sencillo el manejo del sistema, éste debe proporcionar una úni
 
 ## Opciones consideradas
 
-* Opción 01: Patrón Facade (fachada)
+* Patrón Facade (fachada)
 
 ## Decision final [outcome]
 
