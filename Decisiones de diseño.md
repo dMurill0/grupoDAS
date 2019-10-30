@@ -16,8 +16,7 @@ Para hacer más sencillo el manejo del sistema, éste debe proporcionar una úni
 
 ## Decision Drivers 
 
-* [driver 1, e.g., a force, facing concern, …]
-* [driver 2, e.g., a force, facing concern, …]
+* RF25
 
 ## Opciones consideradas
 
