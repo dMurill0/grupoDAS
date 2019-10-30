@@ -2,7 +2,7 @@
 A la hora de la toma de decisiones cogeremos aproximadamente unos tres requisitos y trabajaremos sobre ellos. Cuando se hayan tomado las decisiones sobre éstos, volveremos a coger otros requisitos y así sucesivamente. 
 
 ```markdown
-# [Interfaz única]
+# Decisión de diseño 001: Interfaz única
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -24,7 +24,7 @@ Para hacer más sencillo el manejo del sistema, éste debe proporcionar una úni
 
 ## Decision final [outcome]
 
-Opción seleccionada: "Opción 01", ya que éste patrón se aplica cuando se necesite proporcionar una interfaz simple para un sistema complejo.
+Opción seleccionada: "FACADE", ya que éste patrón se aplica cuando se necesite proporcionar una interfaz simple para un sistema complejo.
 
 ### Consecuencias positivas 
 
@@ -35,3 +35,8 @@ Opción seleccionada: "Opción 01", ya que éste patrón se aplica cuando se nec
 ### Consecuencias negativas 
 
 * Si el acceso por parte de los clientes es masivo, podrían acabar usando solamente una pequeña parte de la fachada.
+
+
+
+
+
