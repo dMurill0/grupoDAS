@@ -38,5 +38,64 @@ Opción seleccionada: "FACADE", ya que éste patrón se aplica cuando se necesit
 
 
 
+# Decisión de diseño 002: Sensores geográficos
 
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-31] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición totalmente aleatoria, pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS y una alerta al sistema de emergencias.
+
+## Decision Drivers 
+
+* RF12
+
+## Opciones consideradas
+
+* Patrón Observer (observador)?????
+
+## Decision final [outcome]
+
+Opción seleccionada: 
+
+### Consecuencias positivas 
+
+* 
+
+### Consecuencias negativas 
+
+* 
+
+
+# Decisión de diseño 003: Llamadas
+
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-31] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición totalmente aleatoria, pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS y una alerta al sistema de emergencias.
+
+## Decision Drivers 
+
+* RF12
+
+## Opciones consideradas
+
+* Patrón Observer (observador)?????
+
+## Decision final [outcome]
+
+Opción seleccionada: 
+
+### Consecuencias positivas 
+
+* 
+
+### Consecuencias negativas 
+
+* 
 
