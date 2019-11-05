@@ -26,8 +26,8 @@ Para hacer más sencillo el manejo del sistema, éste debe proporcionar una úni
 
 ## Decision final [outcome]
 
-Opción seleccionada: "FACADE", ya que éste patrón se aplica cuando se necesite proporcionar una interfaz simple para un   
-sistema complejo.
+Opción seleccionada: "FACADE", ya que éste patrón se aplica cuando se necesite proporcionar una interfaz  
+simple para un sistema complejo.
 
 ### Consecuencias positivas 
 
@@ -50,10 +50,10 @@ que los clientes puedan quedar aislados.
 
 ## Contexto del problema
 
-Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran y envían  
-información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición totalmente aleatoria,  
-pero en el momento en el que un sensor pase de estar desactivado a activado, el centro de control remoto enviará un SMS y una   
-alerta al sistema de emergencias.
+Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran   
+y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición   
+totalmente aleatoria, pero en el momento en el que un sensor pase de estar desactivado a activado, el centro de   
+control remoto enviará un SMS y una alerta al sistema de emergencias.
 
 ## Decision Drivers 
 
@@ -90,10 +90,10 @@ Opción seleccionada: Arquitectura dirigida por eventos.
 
 ## Contexto del problema
 
-Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran y envían   
-información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición totalmente aleatoria,   
-pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS y una alerta al sistema de   
-emergencias.
+Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran  
+y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición   
+totalmente aleatoria, pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS   
+y una alerta al sistema de emergencias.
 
 ## Decision Drivers 
 
