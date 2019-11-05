@@ -5,7 +5,7 @@ Cuando se hayan tomado las decisiones sobre éstos, volveremos a coger otros req
 ```markdown
 # Decisión de diseño 001: Interfaz única
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-23] <!-- when the decision was last updated -->
 
@@ -61,12 +61,11 @@ control remoto enviará un SMS y una alerta al sistema de emergencias.
 
 ## Opciones consideradas
 
-* Patrón Observer
 * Arquitectura dirigida por eventos
 
 ## Decision final [outcome]
 
-Opción seleccionada: Arquitectura dirigida por eventos. 
+Opción seleccionada: Arquitectura dirigida por eventos. Los sensores son los generadores, es decir, son los que se pueden activar o no; el centro de control remoto está conectado con los sensores y recibe la señal si se activan, es el componente de mensajería e informa a las partes interesadas, en este caso el sistema de emergencias.
 
 ### Consecuencias positivas 
 
