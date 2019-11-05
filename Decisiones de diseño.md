@@ -46,27 +46,33 @@ Opción seleccionada: "FACADE", ya que éste patrón se aplica cuando se necesit
 
 ## Contexto del problema
 
-Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición totalmente aleatoria, pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS y una alerta al sistema de emergencias.
+Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición totalmente aleatoria, pero en el momento en el que un sensor pase de estar desactivado a activado, el centro de control remoto enviará un SMS y una alerta al sistema de emergencias.
 
 ## Decision Drivers 
 
-* RF12
+* RF12, RF13
 
 ## Opciones consideradas
 
-* Patrón Observer (observador)?????
+* Patrón Observer
+* Arquitectura dirigida por eventos
 
 ## Decision final [outcome]
 
-Opción seleccionada: 
+Opción seleccionada: Arquitectura dirigida por eventos. 
 
 ### Consecuencias positivas 
 
-* 
+* Detecta un cambio significativo en un estado.
+* Simplicidad.
+* Una sola modalidad para eventos diversos.
 
 ### Consecuencias negativas 
 
-* 
+* Hay posibilidad de desborde.
+* Potencial imprevisión de escalabilidad
+* Pobre comprensibilidad: Puede ser difícil prever qué pasará en respuesta a una acción
+* No hay mucho soporte de recuperación en caso de falla parcial
 
 
 # Decisión de diseño 003: Llamadas
@@ -81,11 +87,40 @@ Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia e
 
 ## Decision Drivers 
 
-* RF12
+* RF12 
 
 ## Opciones consideradas
 
-* Patrón Observer (observador)?????
+* Patrón Observer (observador)
+
+## Decision final [outcome]
+
+Opción seleccionada: Patrón Observer
+
+### Consecuencias positivas 
+
+* 
+
+### Consecuencias negativas 
+
+* 
+# Decisión de diseño 003: Video-vigilancia
+
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+Las cámaras remotas están en contacto con el sistema de emergencias, transmitiéndoles en tiempo real el vídeo.
+
+## Decision Drivers 
+
+* RF3, RF4
+
+## Opciones consideradas
+
+* Patrón Observer (observador)
 
 ## Decision final [outcome]
 
@@ -98,4 +133,3 @@ Opción seleccionada:
 ### Consecuencias negativas 
 
 * 
-
