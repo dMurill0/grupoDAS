@@ -21,7 +21,7 @@ es el mas adecuado?
 
 Solucion:
 Para hacer más sencillo el manejo del sistema, éste debe proporcionar una única interfaz, para diferentes. 
-*(Visible tanto en smartphone, como en ordeador o tablet).
+*(Visible tanto en smartphone, como en ordeador o tablet)*
 
 ## Decision Drivers 
 
