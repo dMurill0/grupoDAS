@@ -65,13 +65,17 @@ control remoto enviará un SMS y una alerta al sistema de emergencias.
 
 ## Decision final [outcome]
 
-Opción seleccionada: Arquitectura dirigida por eventos. Los sensores son los generadores, es decir, son los que se pueden activar o no; el centro de control remoto está conectado con los sensores y recibe la señal si se activan, es el componente de mensajería e informa a las partes interesadas, en este caso el sistema de emergencias.
+Opción seleccionada: Arquitectura dirigida por eventos. Los sensores son los generadores,  
+es decir, son los que se pueden activar o no; el centro de control remoto está conectado  
+con los sensores y recibe la señal si se activan, es el componente de mensajería   
+e informa a las partes interesadas, en este caso el sistema de emergencias.
 
 ### Consecuencias positivas 
 
 * Detecta un cambio significativo en un estado.
 * Simplicidad.
 * Una sola modalidad para eventos diversos.
+* Mejora la agilidad en los sistemas.
 
 ### Consecuencias negativas 
 
@@ -81,7 +85,7 @@ Opción seleccionada: Arquitectura dirigida por eventos. Los sensores son los ge
 * No hay mucho soporte de recuperación en caso de falla parcial
 
 
-# Decisión de diseño 003: Llamadas
+# Decisión de diseño 003: Gestion de llamadas en base a los operadores
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -89,14 +93,11 @@ Opción seleccionada: Arquitectura dirigida por eventos. Los sensores son los ge
 
 ## Contexto del problema
 
-Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran  
-y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición   
-totalmente aleatoria, pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS   
-y una alerta al sistema de emergencias.
+Se requiere que Las llamadas deben entrar tanto al centro de emergencias como al de operaciones mediante una cola y dependiendo de los operadores disponibles.
 
 ## Decision Drivers 
 
-* RF12 
+* RF13 
 
 ## Opciones consideradas
 
