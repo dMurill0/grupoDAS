@@ -13,7 +13,10 @@ Technical Story: [description | ticket/issue URL]
 
 ## Contexto del problema
 
-Para hacer más sencillo el manejo del sistema, éste debe proporcionar una única interfaz. 
+Necesitamos una interfaz unica para que puedan acceder de la misma forma diferentes dispositivos, que metodo
+es el mas adecuado?
+Solucion:
+Para hacer más sencillo el manejo del sistema, éste debe proporcionar una única interfaz, para diferentes. 
 (Visible tanto en smartphone, como en ordeador o tablet).
 
 ## Decision Drivers 
@@ -22,7 +25,7 @@ Para hacer más sencillo el manejo del sistema, éste debe proporcionar una úni
 
 ## Opciones consideradas
 
-* Patrón Facade (fachada)
+* Patrón Facade (fachada), ya que se ajusta y se precisa a la interfaz unica para todos los usuarios.
 
 ## Decision final [outcome]
 
@@ -40,7 +43,8 @@ que los clientes puedan quedar aislados.
 
 * Si el acceso por parte de los clientes es masivo, podrían acabar usando solamente una pequeña parte de la fachada.
 
-
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 # Decisión de diseño 002: Sensores geográficos
 
@@ -50,10 +54,12 @@ que los clientes puedan quedar aislados.
 
 ## Contexto del problema
 
-Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran   
-y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición   
-totalmente aleatoria, pero en el momento en el que un sensor pase de estar desactivado a activado, el centro de   
-control remoto enviará un SMS y una alerta al sistema de emergencias.
+Queremos detectar por medio de sensores, los eventos inesperados que hace que se notifique al sistema 
+de emergencias para que se procesen adecuadamente, que sistema necesitamos?
+Solucion:
+Para acceder al estado sensores en los distintos puntos geográficos, agregaremos en el centro de control
+remoto un sistema para recoger informacion de estos en tiempo real, para luego poder enviar la notificacion
+al centro de emergencias.
 
 ## Decision Drivers 
 
@@ -65,17 +71,16 @@ control remoto enviará un SMS y una alerta al sistema de emergencias.
 
 ## Decision final [outcome]
 
-Opción seleccionada: Arquitectura dirigida por eventos. Los sensores son los generadores,  
-es decir, son los que se pueden activar o no; el centro de control remoto está conectado  
-con los sensores y recibe la señal si se activan, es el componente de mensajería   
-e informa a las partes interesadas, en este caso el sistema de emergencias.
+Opción seleccionada: Arquitectura dirigida por eventos. Los sensores son los generadores, es decir, 
+son los que se pueden activar o no; el centro de control remoto está conectado con los sensores y recibe 
+la señal si se activan, es el componente de mensajería e informa a las partes interesadas, en este 
+caso el sistema de emergencias.
 
 ### Consecuencias positivas 
 
 * Detecta un cambio significativo en un estado.
 * Simplicidad.
 * Una sola modalidad para eventos diversos.
-* Mejora la agilidad en los sistemas.
 
 ### Consecuencias negativas 
 
@@ -84,8 +89,10 @@ e informa a las partes interesadas, en este caso el sistema de emergencias.
 * Pobre comprensibilidad: Puede ser difícil prever qué pasará en respuesta a una acción
 * No hay mucho soporte de recuperación en caso de falla parcial
 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-# Decisión de diseño 003: Gestion de llamadas en base a los operadores
+# Decisión de diseño 003: Llamadas
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -93,11 +100,14 @@ e informa a las partes interesadas, en este caso el sistema de emergencias.
 
 ## Contexto del problema
 
-Se requiere que Las llamadas deben entrar tanto al centro de emergencias como al de operaciones mediante una cola y dependiendo de los operadores disponibles.
+Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran  
+y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición   
+totalmente aleatoria, pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS   
+y una alerta al sistema de emergencias.
 
 ## Decision Drivers 
 
-* RF13 
+* RF12 
 
 ## Opciones consideradas
 
