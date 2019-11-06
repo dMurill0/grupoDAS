@@ -2,6 +2,9 @@
 A la hora de la toma de decisiones cogeremos aproximadamente unos tres requisitos y trabajaremos sobre ellos. 
 Cuando se hayan tomado las decisiones sobre éstos, volveremos a coger otros requisitos y así sucesivamente. 
 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 ```markdown
 # Decisión de diseño 001: Interfaz única
 
@@ -41,7 +44,8 @@ que los clientes puedan quedar aislados.
 
 ### Consecuencias negativas 
 
-* Si el acceso por parte de los clientes es masivo, podrían acabar usando solamente una pequeña parte de la fachada.
+* Si el acceso por parte de los clientes es masivo, podrían acabar usando solamente una pequeña parte de   
+la fachada.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -58,8 +62,8 @@ Queremos detectar por medio de sensores, los eventos inesperados que hace que se
 de emergencias para que se procesen adecuadamente, que sistema necesitamos?
 Solucion:
 Para acceder al estado sensores en los distintos puntos geográficos, agregaremos en el centro de control
-remoto un sistema para recoger informacion de estos en tiempo real, para luego poder enviar la notificacion
-al centro de emergencias.
+remoto un sistema para recoger informacion de estos en tiempo real, para luego poder enviar la   
+notificacion al centro de emergencias.
 
 ## Decision Drivers 
 
@@ -161,3 +165,6 @@ Opción seleccionada:
 ### Consecuencias negativas 
 
 * 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
