@@ -18,9 +18,10 @@ Technical Story: [description | ticket/issue URL]
 
 Necesitamos una interfaz unica para que puedan acceder de la misma forma diferentes dispositivos, que metodo
 es el mas adecuado?
+
 Solucion:
 Para hacer más sencillo el manejo del sistema, éste debe proporcionar una única interfaz, para diferentes. 
-(Visible tanto en smartphone, como en ordeador o tablet).
+*(Visible tanto en smartphone, como en ordeador o tablet).
 
 ## Decision Drivers 
 
@@ -59,7 +60,8 @@ la fachada.
 ## Contexto del problema
 
 Queremos detectar por medio de sensores, los eventos inesperados que hace que se notifique al sistema 
-de emergencias para que se procesen adecuadamente, que sistema necesitamos?
+de emergencias para que se procesen adecuadamente, ¿Qué sistema necesitamos?
+
 Solucion:
 Para acceder al estado sensores en los distintos puntos geográficos, agregaremos en el centro de control
 remoto un sistema para recoger informacion de estos en tiempo real, para luego poder enviar la   
@@ -104,11 +106,11 @@ caso el sistema de emergencias.
 
 ## Contexto del problema
 
-Las llamadas en cola se tienen que asignar a los operadores dependiendo de la disponibilidad de estas, como se podrian 
+Las llamadas en cola se tienen que asignar a los operadores dependiendo de la disponibilidad de estas, ¿Cómo se podrian 
 asignar uniformemente?
 
 Solucion:
-Un modulo que permita acceder y supervisar el estado de la cola de las llamadas, y que al mismo tiempo, asignarlos y 
+Un módulo que permita acceder y supervisar el estado de la cola de las llamadas, y que al mismo tiempo, asignarlos y 
 priorizarlos a los diferentes operadores inactivos o en pausa.
 
 ## Decision Drivers 
