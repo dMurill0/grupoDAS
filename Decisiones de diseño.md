@@ -106,12 +106,13 @@ caso el sistema de emergencias.
 
 ## Contexto del problema
 
-Las llamadas en cola se tienen que asignar a los operadores dependiendo de la disponibilidad de estas, ¿Cómo se podrian 
+Las llamadas en cola se tienen que asignar a los operadores dependiendo de la disponibilidad de   
+estas, ¿Cómo se podrian 
 asignar uniformemente?
 
 Solucion:
-Un módulo que permita acceder y supervisar el estado de la cola de las llamadas, y que al mismo tiempo, asignarlos y 
-priorizarlos a los diferentes operadores inactivos o en pausa.
+Un módulo que permita acceder y supervisar el estado de la cola de las llamadas, y que al mismo  
+tiempo, asignarlos y priorizarlos a los diferentes operadores inactivos o en pausa.
 
 ## Decision Drivers 
 
