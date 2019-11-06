@@ -138,7 +138,7 @@ Opción seleccionada: Supervisor Module
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-# Decisión de diseño 003: Video-vigilancia
+# Decisión de diseño 004: Video-vigilancia
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -175,3 +175,39 @@ Opción seleccionada:
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Decisión de diseño 004: Algoritmo de optimización
+
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+Necesitamos un algoritmo que calcule las rutas más óptimas para que las unidades lleguen al punto de emergencia   
+lo más rápido posible.
+
+Solución:
+Existe una interfaz que tendrá todos los algoritmos necesarios para el funcionamiento del programa. En el   
+momento en el que una emergencia ocurra y se vaya a notificar a las unidades activas, se debe acceder a   
+esta interfaz y seleccionar el método que calcule la ruta más óptima a la emergencia.
+
+## Decision Drivers 
+
+* RF3, RF4
+
+## Opciones consideradas
+
+* Patrón Strategy
+
+## Decision final [outcome]
+
+Opción seleccionada: 
+
+### Consecuencias positivas 
+
+* Permite que el algoritmo pueda variar sin importar los clientes que lo utilicen.
+*
+
+### Consecuencias negativas 
+
+*
