@@ -137,7 +137,6 @@ Opción seleccionada: Supervisor Module
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
 # Decisión de diseño 003: Video-vigilancia
 
 * Estado: [Propuesta]
@@ -146,7 +145,12 @@ Opción seleccionada: Supervisor Module
 
 ## Contexto del problema
 
-Las cámaras remotas están en contacto con el sistema de emergencias, transmitiéndoles en tiempo real el vídeo.
+Queremos que existan unas cámaras transmitan en tiempo real vídeo y además, que estos vídeos se guarden  
+durante un cierto tiempo para luego borrarse y así no saturar la memoria dinámica. ¿Cómo lo hacemos?
+
+Solución:
+Las cámaras remotas están en contacto con el sistema de emergencias, transmitiéndoles en tiempo   
+real el vídeo. El sistema tendrá una base de datos que guarde el vídeo durante x tiempo.
 
 ## Decision Drivers 
 
@@ -154,7 +158,7 @@ Las cámaras remotas están en contacto con el sistema de emergencias, transmiti
 
 ## Opciones consideradas
 
-* Patrón Observer (observador)
+* SOA Event-Driver
 
 ## Decision final [outcome]
 
@@ -166,7 +170,7 @@ Opción seleccionada:
 
 ### Consecuencias negativas 
 
-* 
+*
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
