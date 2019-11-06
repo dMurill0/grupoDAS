@@ -92,7 +92,7 @@ caso el sistema de emergencias.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-# Decisión de diseño 003: Llamadas
+# Decisión de diseño 003: Llamadas distribuidas
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -100,30 +100,38 @@ caso el sistema de emergencias.
 
 ## Contexto del problema
 
-Existen sensores geográficos, los cuales detectan si ocurre alguna emergencia en los lugares donde se encuentran  
-y envían información al CCR. Los sensores pueden estar colocados de una manera específi􏰄ca o tener una disposición   
-totalmente aleatoria, pero en el momento en el que un sensor se active, el centro de control remoto enviará un SMS   
-y una alerta al sistema de emergencias.
+Las llamadas en cola se tienen que asignar a los operadores dependiendo de la disponibilidad de estas, como se podrian 
+asignar uniformemente?
+
+Solucion:
+Un modulo que permita acceder y supervisar el estado de la cola de las llamadas, y que al mismo tiempo, asignarlos y 
+priorizarlos a los diferentes operadores inactivos o en pausa.
 
 ## Decision Drivers 
 
-* RF12 
+* RF11
 
 ## Opciones consideradas
 
-* Patrón Observer (observador)
+* Supervisor Module
 
 ## Decision final [outcome]
 
-Opción seleccionada: Patrón Observer
+Opción seleccionada: Supervisor Module
 
 ### Consecuencias positivas 
 
-* 
+* Acceso en tiempo real a la cola de llamadas
+* Priorizacion de tareas
+* Se podria ocupar de grabar la conversacion
 
 ### Consecuencias negativas 
 
-* 
+* El tiempo de espera puede ser exponencial si la cola no va desapareciendo
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
 # Decisión de diseño 003: Video-vigilancia
 
 * Estado: [Propuesta]
