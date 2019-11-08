@@ -163,19 +163,20 @@ real el vídeo. El sistema tendrá una base de datos que guarde el vídeo durant
 
 ## Decision final [outcome]
 
-Opción seleccionada: 
+Opción seleccionada: SOA Event-Driver
 
 ### Consecuencias positivas 
 
-* 
+* Control y acceso total al modulo de video-camaras en tiempo real.
+* Al ser parecido de la decision de diseño de los sensores, se puede agrupar y tener aprovechar la relacion.
 
 ### Consecuencias negativas 
 
-*
+* El tiempo real puede retardarse.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-# Decisión de diseño 004: Algoritmo de optimización
+# Decisión de diseño 005: Algoritmo de optimización
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -201,13 +202,137 @@ esta interfaz y seleccionar el método que calcule la ruta más óptima a la eme
 
 ## Decision final [outcome]
 
-Opción seleccionada: 
+Opción seleccionada: Patrón Strategy
 
 ### Consecuencias positivas 
 
 * Permite que el algoritmo pueda variar sin importar los clientes que lo utilicen.
-*
+* Es el patron mas adecuado para situar y acceder a las unidades que contienen los nodos.
 
 ### Consecuencias negativas 
 
-*
+* Al ser un recorrido de nodos, cuantos mas nodos hay, la complejidad de recorrer el arbol de estos, puede dificultarse.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Decisión de diseño 006: Asignacion de roles, recursos y llamadas
+
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+¿Cuál es el principio general para asignar responsabilidades a los roles y recursos a los usuarios para que usen el 
+ sistema y los recursos correspondientes?
+
+Solución:
+Asignar una responsabilidad al experto en información y la responsabilidad a un objeto que medie entre los elementos.
+
+## Decision Drivers 
+
+* RF7, RF8, RF14
+
+## Opciones consideradas
+
+* GRASP (object-oriented design General Responsibility Assignment Software Patterns)
+
+## Decision final [outcome]
+
+Opción seleccionada: GRASP
+
+### Consecuencias positivas 
+
+* Se mantiene el encapsulamiento, los objetos utilizan su propia información para llevar a cabo sus tareas. 
+* Se distribuye el comportamiento entre las clases que contienen la información requerida. 
+* Son más fáciles de entender y mantener.
+* Si se asignan bien, el diseño puede soportar un bajo acoplamiento, mayor claridad, encapsulación y reutilización.
+
+### Consecuencias negativas 
+
+* Evitar/reducir el acoplamiento directo entre elementos y mejorar la reutilización suele contener bugs en el sistema.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Decisión de diseño 007: Comunicación y conexion internacional
+
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+¿Como podriamos coordinar las emergencias en base a las unidades activas dependiendo de la zona, que se puedan traducir
+a otro idioma si fuese necesario, y que la comunicación sea cifrada?
+
+Solución:
+Todos los componentes tienen acceso al sistema. Los usuarios que monitorizan las llamadas en curso 
+pueden producir nuevos objetos de datos que se agregan a las emergencias. Los componentes buscan tipos particulares 
+de datos en el sistema, y pueden encontrarlos por coincidencia de patrones con la fuente de conocimiento existente.
+
+## Decision Drivers 
+
+* RF15, RF16, RF17, R18
+
+## Opciones consideradas
+
+* Patrón de pizarra(blackboard)
+
+## Decision final [outcome]
+
+Opción seleccionada: Patrón de pizarra
+
+### Consecuencias positivas 
+
+* Reconocimiento de voz e identificación única.
+* Identificación y seguimiento del vehículo.
+* Identificación de la estructura proteica.
+* Sonar señala la interpretación.
+* Facil de añadir nuevas aplicaciones.
+* Tambien es facil extender la estructura del espacio de datos.
+
+### Consecuencias negativas 
+
+* Modificar el espacio de la estructura de datos puede ser costoso, ya que todas las aplicaciones pueden ser afectadas.
+* Puede necesitar sincronizacion y control de acceso.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Decisión de diseño 008: Comunicación y conexion internacional
+
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+¿Como podriamos coordinar las emergencias en base a las unidades activas dependiendo de la zona, que se puedan traducir
+a otro idioma si fuese necesario, y que la comunicación sea cifrada?
+
+Solución:
+Todos los componentes tienen acceso al sistema. Los usuarios que monitorizan las llamadas en curso 
+pueden producir nuevos objetos de datos que se agregan a las emergencias. Los componentes buscan tipos particulares 
+de datos en el sistema, y pueden encontrarlos por coincidencia de patrones con la fuente de conocimiento existente.
+
+## Decision Drivers 
+
+* RF15, RF16, RF17, R18
+
+## Opciones consideradas
+
+* Patrón de pizarra(blackboard)
+
+## Decision final [outcome]
+
+Opción seleccionada: Patrón de pizarra
+
+### Consecuencias positivas 
+
+* Reconocimiento de voz e identificación única.
+* Identificación y seguimiento del vehículo.
+* Identificación de la estructura proteica.
+* Sonar señala la interpretación.
+* Facil de añadir nuevas aplicaciones.
+* Tambien es facil extender la estructura del espacio de datos.
+
+### Consecuencias negativas 
+
+* Modificar el espacio de la estructura de datos puede ser costoso, ya que todas las aplicaciones pueden ser afectadas.
+* Puede necesitar sincronizacion y control de acceso.
