@@ -318,6 +318,8 @@ arquitectura para aplicaciones World Wide Web en los principales lenguajes de pr
 ## Opciones consideradas
 
 * Patrón de modelo-vista-controlador
+* Patrón observer
+* Patron Publish-Suscribe
 
 ## Decision final [outcome]
 
