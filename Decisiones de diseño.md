@@ -194,7 +194,7 @@ esta interfaz y seleccionar el método que calcule la ruta más óptima a la eme
 
 ## Decision Drivers 
 
-* RF3, RF4
+* RF5
 
 ## Opciones consideradas
 
@@ -295,7 +295,7 @@ Opción seleccionada: Patrón de pizarra
 * Puede necesitar sincronizacion y control de acceso.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-# Decisión de diseño 008: Comunicación y conexion internacional
+# Decisión de diseño 009: Comunicación y conexion internacional
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -303,36 +303,32 @@ Opción seleccionada: Patrón de pizarra
 
 ## Contexto del problema
 
-¿Como podriamos coordinar las emergencias en base a las unidades activas dependiendo de la zona, que se puedan traducir
-a otro idioma si fuese necesario, y que la comunicación sea cifrada?
+¿Como podriamos interaccionar con los usuarios enviandoles notificaciones nuevas en base a que ellos esten suscritos
+por algun medio en el sistema?
 
 Solución:
-Todos los componentes tienen acceso al sistema. Los usuarios que monitorizan las llamadas en curso 
-pueden producir nuevos objetos de datos que se agregan a las emergencias. Los componentes buscan tipos particulares 
-de datos en el sistema, y pueden encontrarlos por coincidencia de patrones con la fuente de conocimiento existente.
-
+Los usuarios se suscriben y reciben informacion cada x tiemo. Esto se hace para separar las representaciones 
+internas de información de las formas en que se presenta y acepta la información del usuario. 
+Desacopla los componentes y permite la reutilización eficiente del código. Seria eficiente definir una 
+arquitectura para aplicaciones World Wide Web en los principales lenguajes de programación.
 ## Decision Drivers 
 
-* RF15, RF16, RF17, R18
+* RF19
 
 ## Opciones consideradas
 
-* Patrón de pizarra(blackboard)
+* Patrón de modelo-vista-controlador
 
 ## Decision final [outcome]
 
-Opción seleccionada: Patrón de pizarra
+Opción seleccionada: Patrón de modelo-vista-controlador
 
 ### Consecuencias positivas 
 
-* Reconocimiento de voz e identificación única.
-* Identificación y seguimiento del vehículo.
-* Identificación de la estructura proteica.
-* Sonar señala la interpretación.
-* Facil de añadir nuevas aplicaciones.
-* Tambien es facil extender la estructura del espacio de datos.
+* Se puede hacer facil el tener multiples vistas partiendo desde el mismo modelo, el cual puede estar conectado o 
+desconectado en tiempo de ejecucion.
 
 ### Consecuencias negativas 
 
-* Modificar el espacio de la estructura de datos puede ser costoso, ya que todas las aplicaciones pueden ser afectadas.
-* Puede necesitar sincronizacion y control de acceso.
+* Aumenta la complejidad.
+* Puede llevar a muchas actualizaciones innecesarias para los usuarios.
