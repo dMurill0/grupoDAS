@@ -295,7 +295,7 @@ Opción seleccionada: Patrón de pizarra
 * Puede necesitar sincronizacion y control de acceso.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-# Decisión de diseño 009: Comunicación y conexion internacional
+# Decisión de diseño 009: Suscripcion RRS
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -304,7 +304,7 @@ Opción seleccionada: Patrón de pizarra
 ## Contexto del problema
 
 ¿Como podriamos interaccionar con los usuarios enviandoles notificaciones nuevas en base a que ellos esten suscritos
-por algun medio en el sistema?
+por algun medio en el sistema para que esten actualizados?
 
 Solución:
 Los usuarios se suscriben y reciben informacion cada x tiemo. Esto se hace para separar las representaciones 
