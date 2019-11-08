@@ -323,7 +323,7 @@ arquitectura para aplicaciones World Wide Web en los principales lenguajes de pr
 
 ## Decision final [outcome]
 
-Opción seleccionada: Patrón de modelo-vista-controlador
+Opción seleccionada: Patrón de modelo-vista-controlador, ya que generaliza ambas opciones de Observer y Publish-suscribe
 
 ### Consecuencias positivas 
 
