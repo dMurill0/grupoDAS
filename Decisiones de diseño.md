@@ -25,7 +25,7 @@ Para hacer más sencillo el manejo del sistema, éste debe proporcionar una úni
 
 ## Decision Drivers 
 
-* RF25
+* RF2
 
 ## Opciones consideradas
 
@@ -295,7 +295,7 @@ Opción seleccionada: Patrón de pizarra
 * Puede necesitar sincronizacion y control de acceso.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-# Decisión de diseño 009: Suscripcion RRS
+# Decisión de diseño 008: Suscripcion RRS
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
@@ -334,3 +334,51 @@ desconectado en tiempo de ejecucion.
 
 * Aumenta la complejidad.
 * Puede llevar a muchas actualizaciones innecesarias para los usuarios.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# Decisión de diseño 009: Escalabilidad
+
+* Estado: [Propuesta]
+* Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
+* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+
+## Contexto del problema
+
+El enfoque usual de la aplicacion es que mantenga al estado actual de los datos mediante actualizacion conforme los 
+usuarios trabajan con ellos. Por ejemplo, a menos que exista un mecanismo de auditoria adicional que registre los
+detalles de cada operacion en un registro independiente, el historial se pierde. Como damos una solucion a esto?
+
+Solución:
+Definir un enfoque para controlar las operaciones basado en una secuencia de eventos, cada uno de los cuales se registra 
+en un almacen de solo anexar. Este almacen publicara estos eventos para que los consumidorespuedan recibir notificacioes
+y controlarlos si lo necesitan. Ademas, las aplicaciones pueden leer el historial de eventos en cualquier momento y 
+usuario para materializar el estado actual de una entidadal reproducir y consuir todos los eventos relacionados con esa
+entidad.
+## Decision Drivers 
+
+* RF20
+
+## Opciones consideradas
+
+* Patrón Evento-Sourcing
+
+## Decision final [outcome]
+
+Opción seleccionada: Event-Sourcing
+
+### Consecuencias positivas 
+
+* Los eventos son inmutables y pueden almacenarse mediante una operacion de solo anexar.
+* Ayuda a impedir que las actualizaciones simultanteas causen conflictos, ya que evita la necesidad de actualizar 
+directamente los objetos en el almacen de datos.
+* No hay ninguna contencion durante el procesamiento de transacciones.
+* Mejora considerablemente el rendimiento y la escalabilidad de las aplicaciones, especialmente el nivel de presentacion
+o la interfaz de usuario.
+
+### Consecuencias negativas 
+
+* El sistema solo sera coherente al crear vistas materializadas o proyecciones de los datos mediante la reproduccion 
+de eventos.
+* Puede ser dificil combinar los eventos existentes en el almacen con la nueva version, cuando se quiera modificar un
+formato.
+* No hay ningun enfoque estandar ni mecanismos existentes como consultas SQL para leer los eventos y obtener informacion.
