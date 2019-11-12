@@ -53,7 +53,7 @@ la fachada.
 
 # Decisión de diseño 002: Sensores geográficos
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-31] <!-- when the decision was last updated -->
 
@@ -100,7 +100,7 @@ caso el sistema de emergencias.
 
 # Decisión de diseño 003: Llamadas distribuidas
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-31] <!-- when the decision was last updated -->
 
@@ -139,7 +139,7 @@ Opción seleccionada: Supervisor Module
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # Decisión de diseño 004: Video-vigilancia
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-5] <!-- when the decision was last updated -->
 
@@ -177,7 +177,7 @@ Opción seleccionada: SOA Event-Driver
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # Decisión de diseño 005: Algoritmo de optimización
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-5] <!-- when the decision was last updated -->
 
@@ -253,7 +253,7 @@ Opción seleccionada: GRASP
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # Decisión de diseño 007: Comunicación y conexion internacional
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-5] <!-- when the decision was last updated -->
 
@@ -296,7 +296,7 @@ Opción seleccionada: Patrón de pizarra
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # Decisión de diseño 008: Suscripcion RRS
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-5] <!-- when the decision was last updated -->
 
@@ -338,7 +338,7 @@ desconectado en tiempo de ejecucion.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # Decisión de diseño 009: Escalabilidad
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-5] <!-- when the decision was last updated -->
 
