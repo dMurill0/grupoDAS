@@ -177,6 +177,10 @@ Opción seleccionada: SOA Event-Driver
 ## Pros and Cons of the Options
 ### [Opción 1: Modelo Vista-Controlador]
 Buena, ya que se separa la lógica de la aplicación de la lógica de la vista.
+Buena por la implementación se realiza de forma modular.
+Mala ya que es necesario una mayor dedicación en los tiempos iniciales del desarrollo y el desarrollador   
+debe crear un mayor número de clases que pueden ser no necesarias en otros tipos de entorno.
+Mala ya que es un patrón de diseño orientado a objetos, es decir, su implementación es sumamente costosa y difícil en lenguajes que no siguen este paradigma.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
