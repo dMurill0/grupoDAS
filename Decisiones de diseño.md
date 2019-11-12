@@ -55,7 +55,7 @@ la fachada.
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-31] <!-- when the decision was last updated -->
+* Fecha: [2019-10-29] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -102,7 +102,7 @@ caso el sistema de emergencias.
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-31] <!-- when the decision was last updated -->
+* Fecha: [2019-10-30] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -159,6 +159,7 @@ real el vídeo. El sistema tendrá una base de datos que guarde el vídeo durant
 ## Opciones consideradas
 
 * SOA Event-Driver
+* Modelo Vista-Controlador
 
 ## Decision final [outcome]
 
@@ -172,6 +173,10 @@ Opción seleccionada: SOA Event-Driver
 ### Consecuencias negativas 
 
 * El tiempo real puede retardarse.
+
+## Pros and Cons of the Options
+### [Opción 1: Modelo Vista-Controlador]
+Buena, ya que se separa la lógica de la aplicación de la lógica de la vista.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -346,7 +351,7 @@ desconectado en tiempo de ejecucion.
 
 El enfoque usual de la aplicacion es que mantenga al estado actual de los datos mediante actualizacion conforme los 
 usuarios trabajan con ellos. Por ejemplo, a menos que exista un mecanismo de auditoria adicional que registre los
-detalles de cada operacion en un registro independiente, el historial se pierde. ¿Cómo damos una solucion a esto?
+detalles de cada operacion en un registro independiente, el historial se pierde. ¿Cómo damos una solución a esto?
 
 Solución:
 Definir un enfoque para controlar las operaciones basado en una secuencia de eventos, cada uno de los cuales se registra 
