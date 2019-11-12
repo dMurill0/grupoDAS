@@ -107,8 +107,7 @@ caso el sistema de emergencias.
 ## Contexto del problema
 
 Las llamadas en cola se tienen que asignar a los operadores dependiendo de la disponibilidad de   
-estas, ¿Cómo se podrian 
-asignar uniformemente?
+estas, ¿Cómo se podrian asignar uniformemente?
 
 Solucion:
 Un módulo que permita acceder y supervisar el estado de la cola de las llamadas, y que al mismo  
@@ -223,7 +222,7 @@ Opción seleccionada: Patrón Strategy
 ## Contexto del problema
 
 ¿Cuál es el principio general para asignar responsabilidades a los roles y recursos a los usuarios para que usen el 
- sistema y los recursos correspondientes?
+sistema y los recursos correspondientes?
 
 Solución:
 Asignar una responsabilidad al experto en información y la responsabilidad a un objeto que medie entre los elementos.
@@ -260,7 +259,7 @@ Opción seleccionada: GRASP
 
 ## Contexto del problema
 
-¿Como podriamos coordinar las emergencias en base a las unidades activas dependiendo de la zona, que se puedan traducir
+¿Cómo podriamos coordinar las emergencias en base a las unidades activas dependiendo de la zona, que se puedan traducir
 a otro idioma si fuese necesario, y que la comunicación sea cifrada?
 
 Solución:
@@ -303,14 +302,15 @@ Opción seleccionada: Patrón de pizarra
 
 ## Contexto del problema
 
-¿Como podriamos interaccionar con los usuarios enviandoles notificaciones nuevas en base a que ellos esten suscritos
+¿Cómo podriamos interaccionar con los usuarios enviandoles notificaciones nuevas en base a que ellos esten suscritos
 por algun medio en el sistema para que esten actualizados?
 
 Solución:
-Los usuarios se suscriben y reciben informacion cada x tiemo. Esto se hace para separar las representaciones 
+Los usuarios se suscriben y reciben informacion cada x tiempo. Esto se hace para separar las representaciones 
 internas de información de las formas en que se presenta y acepta la información del usuario. 
 Desacopla los componentes y permite la reutilización eficiente del código. Seria eficiente definir una 
 arquitectura para aplicaciones World Wide Web en los principales lenguajes de programación.
+
 ## Decision Drivers 
 
 * RF19
@@ -346,7 +346,7 @@ desconectado en tiempo de ejecucion.
 
 El enfoque usual de la aplicacion es que mantenga al estado actual de los datos mediante actualizacion conforme los 
 usuarios trabajan con ellos. Por ejemplo, a menos que exista un mecanismo de auditoria adicional que registre los
-detalles de cada operacion en un registro independiente, el historial se pierde. Como damos una solucion a esto?
+detalles de cada operacion en un registro independiente, el historial se pierde. ¿Cómo damos una solucion a esto?
 
 Solución:
 Definir un enfoque para controlar las operaciones basado en una secuencia de eventos, cada uno de los cuales se registra 
@@ -354,6 +354,7 @@ en un almacen de solo anexar. Este almacen publicara estos eventos para que los 
 y controlarlos si lo necesitan. Ademas, las aplicaciones pueden leer el historial de eventos en cualquier momento y 
 usuario para materializar el estado actual de una entidadal reproducir y consuir todos los eventos relacionados con esa
 entidad.
+
 ## Decision Drivers 
 
 * RF20
