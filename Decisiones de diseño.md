@@ -224,7 +224,7 @@ Opción seleccionada: Patrón Strategy
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 # Decisión de diseño 006: Asignacion de roles, recursos y llamadas
 
-* Estado: [Propuesta]
+* Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
 * Fecha: [2019-10-12] <!-- when the decision was last updated -->
 
