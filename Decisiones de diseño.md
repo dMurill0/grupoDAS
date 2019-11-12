@@ -55,7 +55,7 @@ la fachada.
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-24] <!-- when the decision was last updated -->
+* Fecha: [2019-10-23] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -188,7 +188,7 @@ Mala ya que es un patrón de diseño orientado a objetos, es decir, su implement
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-31] <!-- when the decision was last updated -->
+* Fecha: [2019-10-3] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -226,7 +226,7 @@ Opción seleccionada: Patrón Strategy
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-12] <!-- when the decision was last updated -->
+* Fecha: [2019-10-5] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -263,7 +263,7 @@ Opción seleccionada: GRASP
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-6] <!-- when the decision was last updated -->
+* Fecha: [2019-10-7] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
