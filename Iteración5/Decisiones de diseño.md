@@ -1,3 +1,4 @@
+```markdown
 # Decisión de diseño 008: Suscripcion RRS
 
 * Estado: [Decidida]
