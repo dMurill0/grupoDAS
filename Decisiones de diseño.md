@@ -55,7 +55,7 @@ la fachada.
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-29] <!-- when the decision was last updated -->
+* Fecha: [2019-10-24] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -141,7 +141,7 @@ Opción seleccionada: Supervisor Module
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+* Fecha: [2019-10-31] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -188,7 +188,7 @@ Mala ya que es un patrón de diseño orientado a objetos, es decir, su implement
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+* Fecha: [2019-10-31] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -226,19 +226,18 @@ Opción seleccionada: Patrón Strategy
 
 * Estado: [Propuesta]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+* Fecha: [2019-10-12] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
-¿Cuál es el principio general para asignar responsabilidades a los roles y recursos a los usuarios para que usen el 
-sistema y los recursos correspondientes?
+¿Cuál es el principio general para asignar responsabilidades a los roles existentes, los recursos necesarios para cada emergencia y la asignación de llamadas tanto al sistema de emergencias como al centro de operaciones?
 
 Solución:
 Asignar una responsabilidad al experto en información y la responsabilidad a un objeto que medie entre los elementos.
 
 ## Decision Drivers 
 
-* RF7, RF8, RF14
+* RF5, RF7, RF8, RF9, RF10, RF14
 
 ## Opciones consideradas
 
@@ -264,7 +263,7 @@ Opción seleccionada: GRASP
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+* Fecha: [2019-10-6] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -307,7 +306,7 @@ Opción seleccionada: Patrón de pizarra
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+* Fecha: [2019-10-7] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
@@ -349,7 +348,7 @@ desconectado en tiempo de ejecucion.
 
 * Estado: [Decidida]
 * Responsables de la decisión: [Hamsa Aldrobi, Raquel Alonso]
-* Fecha: [2019-10-5] <!-- when the decision was last updated -->
+* Fecha: [2019-10-7] <!-- when the decision was last updated -->
 
 ## Contexto del problema
 
