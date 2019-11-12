@@ -1,3 +1,4 @@
+```markdown
 # Decisión de diseño 003: Llamadas distribuidas
 
 * Estado: [Decidida]
