@@ -1,3 +1,4 @@
+```markdown
 # Decisión de diseño 007: Comunicación y conexion internacional
 
 * Estado: [Decidida]
