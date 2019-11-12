@@ -1,3 +1,4 @@
+```markdown
 # Decisión de diseño 005: Algoritmo de optimización
 
 * Estado: [Decidida]
