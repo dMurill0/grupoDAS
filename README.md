@@ -1,19 +1,13 @@
-# Grupo 6 DAS   ![Tipo de grupo Test](https://img.shields.io/badge/Tipo%20de%20grupo-TEST-green)
-Este es el repositorio de Diseño y Arquitectura del Software
-## INTEGRANTES
+# Group 6 of DAW   ![Active](https://img.shields.io/badge/version-0.1-blue)
+This is the main project's repository. In [Develop]'s folder contains all the stuff related about the application developing code. In [Prototype]'s folder contains some sketch of the web app, and first ideas.
+
+## Members
 - Daniel Murillo Garzón
 - Hamsa Aldrobi Elharti
-- Celia Sanjuan Sánchez
-- Ana Acosta Hernández
+- Joseé María Melero Gimenez
 - Raquel Alonso Fernández
 - Manuel León Briz
   
-## ROLES
-### Arquitectos Software Senior (ASS):
-Hamsa, Raquel
-### Arquitectos  Software  Junior  (ASJ):
-Daniel, Manuel
-### Arquitectos Software Cognitivos (ASC):
-Celia, Ana
+## Support links
+We're using [Trello](https://trello.com/b/CyhfEwRF/daw-g13) for the web product.
 
-Además de este repositorio hemos creado un [Trello](https://trello.com/b/oGMOQVEW/das) para poder interactuar entre nosotros y llevar mejor el proyecto.
